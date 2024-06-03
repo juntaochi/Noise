@@ -1,0 +1,436 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9A17536F2BCB78980066ACEE /* Noise_MixerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A17536E2BCB78980066ACEE /* Noise_MixerApp.swift */; };
+		9A1753712BCB78980066ACEE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1753702BCB78980066ACEE /* ContentView.swift */; };
+		9A1753732BCB789D0066ACEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A1753722BCB789D0066ACEE /* Assets.xcassets */; };
+		9A1753762BCB789D0066ACEE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A1753752BCB789D0066ACEE /* Preview Assets.xcassets */; };
+		9A17537B2BCB789D0066ACEE /* Noise_Mixer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9A1753792BCB789D0066ACEE /* Noise_Mixer.xcdatamodeld */; };
+		9A1753822BCB7AE20066ACEE /* mixerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1753812BCB7AE20066ACEE /* mixerView.swift */; };
+		9A1753842BCBEB7D0066ACEE /* Noise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1753832BCBEB7D0066ACEE /* Noise.swift */; };
+		9A1753862BCBEC6B0066ACEE /* NoiseRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1753852BCBEC6B0066ACEE /* NoiseRepo.swift */; };
+		9A1753882BCBFBE90066ACEE /* ZenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1753872BCBFBE90066ACEE /* ZenView.swift */; };
+		9A25A36D2BD7225D008CDB37 /* RainRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A25A36C2BD7225D008CDB37 /* RainRectangle.swift */; };
+		9A25A36F2BD733A5008CDB37 /* FireRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A25A36E2BD733A4008CDB37 /* FireRectangle.swift */; };
+		9A25A3712BD90CDC008CDB37 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 9A25A3702BD90CDC008CDB37 /* Shaders.metal */; };
+		9A34FE222C0C6C2F00929CC9 /* BlurredSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A34FE212C0C6C2F00929CC9 /* BlurredSheet.swift */; };
+		CE5D732C2BDC50AD005CBB9C /* (null) in Sources */ = {isa = PBXBuildFile; };
+		CE92888B2BDEF91B00483556 /* IsChecked.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE92888A2BDEF91B00483556 /* IsChecked.swift */; };
+		CE92888D2BDEF93400483556 /* selectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE92888C2BDEF93400483556 /* selectionView.swift */; };
+		CE940FA02BDDB1B20041DE42 /* (null) in Sources */ = {isa = PBXBuildFile; };
+		CEA8637D2BD0686A00F5EAB6 /* AudioPlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA8637C2BD0686A00F5EAB6 /* AudioPlayerManager.swift */; };
+		CEA8637F2BD070EC00F5EAB6 /* audioSounds in Resources */ = {isa = PBXBuildFile; fileRef = CEA8637E2BD070EC00F5EAB6 /* audioSounds */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9A17536B2BCB78980066ACEE /* Noise Mixer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Noise Mixer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A17536E2BCB78980066ACEE /* Noise_MixerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Noise_MixerApp.swift; sourceTree = "<group>"; };
+		9A1753702BCB78980066ACEE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9A1753722BCB789D0066ACEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9A1753752BCB789D0066ACEE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9A17537A2BCB789D0066ACEE /* Noise_Mixer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Noise_Mixer.xcdatamodel; sourceTree = "<group>"; };
+		9A1753812BCB7AE20066ACEE /* mixerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mixerView.swift; sourceTree = "<group>"; };
+		9A1753832BCBEB7D0066ACEE /* Noise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Noise.swift; sourceTree = "<group>"; };
+		9A1753852BCBEC6B0066ACEE /* NoiseRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoiseRepo.swift; sourceTree = "<group>"; };
+		9A1753872BCBFBE90066ACEE /* ZenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZenView.swift; sourceTree = "<group>"; };
+		9A25A36C2BD7225D008CDB37 /* RainRectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainRectangle.swift; sourceTree = "<group>"; };
+		9A25A36E2BD733A4008CDB37 /* FireRectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireRectangle.swift; sourceTree = "<group>"; };
+		9A25A3702BD90CDC008CDB37 /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		9A34FE212C0C6C2F00929CC9 /* BlurredSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurredSheet.swift; sourceTree = "<group>"; };
+		CE92888A2BDEF91B00483556 /* IsChecked.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsChecked.swift; sourceTree = "<group>"; };
+		CE92888C2BDEF93400483556 /* selectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = selectionView.swift; sourceTree = "<group>"; };
+		CEA8637C2BD0686A00F5EAB6 /* AudioPlayerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerManager.swift; sourceTree = "<group>"; };
+		CEA8637E2BD070EC00F5EAB6 /* audioSounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = audioSounds; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9A1753682BCB78980066ACEE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9A1753622BCB78980066ACEE = {
+			isa = PBXGroup;
+			children = (
+				9A17536D2BCB78980066ACEE /* Noise Mixer */,
+				9A17536C2BCB78980066ACEE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9A17536C2BCB78980066ACEE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9A17536B2BCB78980066ACEE /* Noise Mixer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9A17536D2BCB78980066ACEE /* Noise Mixer */ = {
+			isa = PBXGroup;
+			children = (
+				9A34FE202C0C6BCA00929CC9 /* Helpers */,
+				CEA8637E2BD070EC00F5EAB6 /* audioSounds */,
+				9A17536E2BCB78980066ACEE /* Noise_MixerApp.swift */,
+				9A1753702BCB78980066ACEE /* ContentView.swift */,
+				CEA8637C2BD0686A00F5EAB6 /* AudioPlayerManager.swift */,
+				CE92888C2BDEF93400483556 /* selectionView.swift */,
+				9A1753812BCB7AE20066ACEE /* mixerView.swift */,
+				9A25A36E2BD733A4008CDB37 /* FireRectangle.swift */,
+				9A25A36C2BD7225D008CDB37 /* RainRectangle.swift */,
+				9A1753872BCBFBE90066ACEE /* ZenView.swift */,
+				9A1753832BCBEB7D0066ACEE /* Noise.swift */,
+				CE92888A2BDEF91B00483556 /* IsChecked.swift */,
+				9A1753852BCBEC6B0066ACEE /* NoiseRepo.swift */,
+				9A1753722BCB789D0066ACEE /* Assets.xcassets */,
+				9A1753792BCB789D0066ACEE /* Noise_Mixer.xcdatamodeld */,
+				9A1753742BCB789D0066ACEE /* Preview Content */,
+			);
+			path = "Noise Mixer";
+			sourceTree = "<group>";
+		};
+		9A1753742BCB789D0066ACEE /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9A1753752BCB789D0066ACEE /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9A34FE202C0C6BCA00929CC9 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				9A34FE212C0C6C2F00929CC9 /* BlurredSheet.swift */,
+				9A25A3702BD90CDC008CDB37 /* Shaders.metal */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9A17536A2BCB78980066ACEE /* Noise Mixer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A17537E2BCB789D0066ACEE /* Build configuration list for PBXNativeTarget "Noise Mixer" */;
+			buildPhases = (
+				9A1753672BCB78980066ACEE /* Sources */,
+				9A1753682BCB78980066ACEE /* Frameworks */,
+				9A1753692BCB78980066ACEE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Noise Mixer";
+			productName = "Noise Mixer";
+			productReference = 9A17536B2BCB78980066ACEE /* Noise Mixer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9A1753632BCB78980066ACEE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					9A17536A2BCB78980066ACEE = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = 9A1753662BCB78980066ACEE /* Build configuration list for PBXProject "Noise Mixer" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9A1753622BCB78980066ACEE;
+			productRefGroup = 9A17536C2BCB78980066ACEE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9A17536A2BCB78980066ACEE /* Noise Mixer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9A1753692BCB78980066ACEE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A1753762BCB789D0066ACEE /* Preview Assets.xcassets in Resources */,
+				CEA8637F2BD070EC00F5EAB6 /* audioSounds in Resources */,
+				9A1753732BCB789D0066ACEE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9A1753672BCB78980066ACEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A25A36F2BD733A5008CDB37 /* FireRectangle.swift in Sources */,
+				CE5D732C2BDC50AD005CBB9C /* (null) in Sources */,
+				CE940FA02BDDB1B20041DE42 /* (null) in Sources */,
+				9A1753712BCB78980066ACEE /* ContentView.swift in Sources */,
+				9A1753882BCBFBE90066ACEE /* ZenView.swift in Sources */,
+				9A25A36D2BD7225D008CDB37 /* RainRectangle.swift in Sources */,
+				9A34FE222C0C6C2F00929CC9 /* BlurredSheet.swift in Sources */,
+				9A1753862BCBEC6B0066ACEE /* NoiseRepo.swift in Sources */,
+				9A1753822BCB7AE20066ACEE /* mixerView.swift in Sources */,
+				9A17537B2BCB789D0066ACEE /* Noise_Mixer.xcdatamodeld in Sources */,
+				9A1753842BCBEB7D0066ACEE /* Noise.swift in Sources */,
+				CE92888D2BDEF93400483556 /* selectionView.swift in Sources */,
+				CEA8637D2BD0686A00F5EAB6 /* AudioPlayerManager.swift in Sources */,
+				9A17536F2BCB78980066ACEE /* Noise_MixerApp.swift in Sources */,
+				9A25A3712BD90CDC008CDB37 /* Shaders.metal in Sources */,
+				CE92888B2BDEF91B00483556 /* IsChecked.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9A17537C2BCB789D0066ACEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9A17537D2BCB789D0066ACEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9A17537F2BCB789D0066ACEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Noise Mixer/Preview Content\"";
+				DEVELOPMENT_TEAM = B8A6Y884SN;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Noise-Mixer-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = juntaochi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9A1753802BCB789D0066ACEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Noise Mixer/Preview Content\"";
+				DEVELOPMENT_TEAM = B8A6Y884SN;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Noise-Mixer-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = juntaochi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9A1753662BCB78980066ACEE /* Build configuration list for PBXProject "Noise Mixer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A17537C2BCB789D0066ACEE /* Debug */,
+				9A17537D2BCB789D0066ACEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A17537E2BCB789D0066ACEE /* Build configuration list for PBXNativeTarget "Noise Mixer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A17537F2BCB789D0066ACEE /* Debug */,
+				9A1753802BCB789D0066ACEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9A1753792BCB789D0066ACEE /* Noise_Mixer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9A17537A2BCB789D0066ACEE /* Noise_Mixer.xcdatamodel */,
+			);
+			currentVersion = 9A17537A2BCB789D0066ACEE /* Noise_Mixer.xcdatamodel */;
+			path = Noise_Mixer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9A1753632BCB78980066ACEE /* Project object */;
+}

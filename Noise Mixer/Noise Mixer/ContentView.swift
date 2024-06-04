@@ -42,7 +42,7 @@ struct ContentView: View {
                         .animation(.smooth(duration: 0.2),value: showMixer)
                     Spacer()
                     Text("Select Noises")
-                        .foregroundColor(.white.opacity(showMixer ? 0.1 : 0.32))
+                        .foregroundColor(.white.opacity(isMenuPresented ? 0.1 : 0.32))
                         .padding(30)
                         .background(.clear)
                         .contentShape(Rectangle())
@@ -52,9 +52,6 @@ struct ContentView: View {
                         .sheet(isPresented: $isMenuPresented) {
                             selectionView()
                         }
-
-
-                    
                 }
                 Spacer()
 

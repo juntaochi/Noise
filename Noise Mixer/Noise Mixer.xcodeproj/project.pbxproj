@@ -20,6 +20,8 @@
 		9A25A36F2BD733A5008CDB37 /* FireRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A25A36E2BD733A4008CDB37 /* FireRectangle.swift */; };
 		9A25A3712BD90CDC008CDB37 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 9A25A3702BD90CDC008CDB37 /* Shaders.metal */; };
 		9A34FE222C0C6C2F00929CC9 /* BlurredSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A34FE212C0C6C2F00929CC9 /* BlurredSheet.swift */; };
+		9A34FE252C0DA84300929CC9 /* RainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A34FE242C0DA84300929CC9 /* RainView.swift */; };
+		9A34FE272C0DAA7500929CC9 /* FireView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A34FE262C0DAA7500929CC9 /* FireView.swift */; };
 		CE5D732C2BDC50AD005CBB9C /* (null) in Sources */ = {isa = PBXBuildFile; };
 		CE92888B2BDEF91B00483556 /* IsChecked.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE92888A2BDEF91B00483556 /* IsChecked.swift */; };
 		CE92888D2BDEF93400483556 /* selectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE92888C2BDEF93400483556 /* selectionView.swift */; };
@@ -43,6 +45,8 @@
 		9A25A36E2BD733A4008CDB37 /* FireRectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireRectangle.swift; sourceTree = "<group>"; };
 		9A25A3702BD90CDC008CDB37 /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
 		9A34FE212C0C6C2F00929CC9 /* BlurredSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurredSheet.swift; sourceTree = "<group>"; };
+		9A34FE242C0DA84300929CC9 /* RainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainView.swift; sourceTree = "<group>"; };
+		9A34FE262C0DAA7500929CC9 /* FireView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireView.swift; sourceTree = "<group>"; };
 		CE92888A2BDEF91B00483556 /* IsChecked.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsChecked.swift; sourceTree = "<group>"; };
 		CE92888C2BDEF93400483556 /* selectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = selectionView.swift; sourceTree = "<group>"; };
 		CEA8637C2BD0686A00F5EAB6 /* AudioPlayerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerManager.swift; sourceTree = "<group>"; };
@@ -79,6 +83,7 @@
 		9A17536D2BCB78980066ACEE /* Noise Mixer */ = {
 			isa = PBXGroup;
 			children = (
+				9A34FE232C0DA39500929CC9 /* noiseViews */,
 				9A34FE202C0C6BCA00929CC9 /* Helpers */,
 				CEA8637E2BD070EC00F5EAB6 /* audioSounds */,
 				9A17536E2BCB78980066ACEE /* Noise_MixerApp.swift */,
@@ -114,6 +119,15 @@
 				9A25A3702BD90CDC008CDB37 /* Shaders.metal */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		9A34FE232C0DA39500929CC9 /* noiseViews */ = {
+			isa = PBXGroup;
+			children = (
+				9A34FE262C0DAA7500929CC9 /* FireView.swift */,
+				9A34FE242C0DA84300929CC9 /* RainView.swift */,
+			);
+			path = noiseViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,6 +201,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A34FE272C0DAA7500929CC9 /* FireView.swift in Sources */,
+				9A34FE252C0DA84300929CC9 /* RainView.swift in Sources */,
 				9A25A36F2BD733A5008CDB37 /* FireRectangle.swift in Sources */,
 				CE5D732C2BDC50AD005CBB9C /* (null) in Sources */,
 				CE940FA02BDDB1B20041DE42 /* (null) in Sources */,

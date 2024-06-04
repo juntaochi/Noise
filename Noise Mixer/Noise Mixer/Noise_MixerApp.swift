@@ -10,24 +10,10 @@ let sharedNoiseRepo = NoiseRepo()
 class AppDelegate: NSObject, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         let noiseList = sharedNoiseRepo.noiseList
-//        for noise in noiseList{
-//            noise.volume = 1
-//            noise.saveVolumeToPersistentStorage()
-//        }
-        noiseList[0].volume = noiseList[0].loadFire()!
-        noiseList[1].volume = noiseList[1].loadRain()!
-        noiseList[2].volume = noiseList[2].loadForest()!
-        noiseList[3].volume = noiseList[3].loadWave()!
 
-//        for noise in noiseList{
-//            if let saved_volume = noise.loadVolumeFromPersistentStorage(){
-//                
-//                noise.volume = saved_volume
-//                print("In AppDelegate, Noise: \(noise.soundEffectName), volume: \(noise.volume) ")
-//            }
-//            
-//        }
-        
+        for noise in noiseList{
+            noise.volume = noise.loadNoise()!
+        }
         return true
     }
 }
@@ -57,34 +43,23 @@ struct Noise_MixerApp: App {
         switch newScenePhase{
             
         case .active:
-            noiseList[0].volume = noiseList[0].loadFire()!
-            noiseList[1].volume = noiseList[1].loadRain()!
-            noiseList[2].volume = noiseList[2].loadForest()!
-            noiseList[3].volume = noiseList[3].loadWave()!
+            for noise in noiseList{
+                noise.volume = noise.loadNoise()!
+            }
         case .inactive:
+            
+            for noise in noiseList{
+                noise.saveNoise()
+            }
 
-            noiseList[0].saveFireNoise()
-            noiseList[1].saveRainNoise()
-            noiseList[2].saveForestNoise()
-            noiseList[3].saveWaveNosie()
-//            for noise in noiseList{
-//                print("Noise: \(noise.soundEffectName) saved volume: \(noise.volume)")
-//                noise.saveVolumeToPersistentStorage()
-//            }
         case .background:
-//            for noise in noiseList{
-//                print("Noise: \(noise.soundEffectName) saved volume: \(noise.volume)")
-//                noise.saveVolumeToPersistentStorage()
-//            }
-            noiseList[0].saveFireNoise()
-            noiseList[1].saveRainNoise()
-            noiseList[2].saveForestNoise()
-            noiseList[3].saveWaveNosie()
+            
+            for noise in noiseList{
+                noise.saveNoise()
+            }
             
         @unknown default:
             break
-            
-            
         }
     }
 }

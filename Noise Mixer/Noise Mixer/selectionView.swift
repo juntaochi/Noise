@@ -9,56 +9,30 @@ struct selectionView: View {
     @EnvironmentObject var noiseRepo: NoiseRepo
     @EnvironmentObject var selectedNoises: SelectedNoises
     @EnvironmentObject var checked: IsChecked
-    //Has to be updated if noises are added to match # of total noises
-//    @State private var backgroundColor: [Color] = [Color.white, Color.white, Color.white, Color.white, Color.white]
-    
     
     var body: some View {
-        ZStack{
-            Rectangle()
-                            .fill(.ultraThinMaterial)
-                            .edgesIgnoringSafeArea(.all)
-
-        
-            VStack{
-                
-    //            Text("Select 4 noises")
-    //                .font(.title)
-    //                .padding()
-    //
-    //            Divider()
-    //
-                List{
-                    ForEach(0..<noiseRepo.noiseList.count, id: \.self) { index in
-                        let option = noiseRepo.noiseList[index]
-                        HStack{
-                            option.icon
-    //                            .foregroundColor(backgroundColor[index])
-                            Text(option.soundEffectName)
-                            Spacer()
-                            Image(systemName: "checkmark")
-    //                            .foregroundColor(.blue)
-                                .opacity(checked.isChecked[index] ? 1 : 0)
-                        }.onTapGesture{
-                            if checked.isChecked[index] == true{
+        VStack{
+            
+            List{
+                ForEach(0..<noiseRepo.noiseList.count, id: \.self) { index in
+                    let option = noiseRepo.noiseList[index]
+                    HStack{
+                        option.icon
+                        Text(option.noiseName)
+                        Spacer()
+                        Image(systemName: "checkmark")
+                            .opacity(checked.isChecked[index] ? 1 : 0)
+                    }.onTapGesture{
+                        if checked.isChecked[index] == true{
+                            checked.isChecked[index].toggle()
+                        }
+                        else {
+                            if checkLessThan4OptionsSelected(isChecked: checked.isChecked){
                                 checked.isChecked[index].toggle()
-    //                            backgroundColor[index] = backgroundColor[index] == Color.white ? option.color : Color.white
                             }
-                            else {
-                                if checkLessThan4OptionsSelected(isChecked: checked.isChecked){
-                                    checked.isChecked[index].toggle()
-    //                                backgroundColor[index] = backgroundColor[index] == Color.white ? option.color : Color.white
-                                }
-                            }
-                            
-                        }.onAppear{
-    //                        if checked.isChecked[index] == true{
-    //                            backgroundColor[index] = option.color
-    //                        }
                         }
                     }
                 }
-                //Add selected options to selectedNoises
             }.onDisappear{
                 //If less than 4 options are selected, select for them
                 if checkLessThan4OptionsSelected(isChecked: checked.isChecked){
@@ -67,10 +41,8 @@ struct selectionView: View {
                             checked.isChecked[index] = !checked.isChecked[index]
                         }
                         if !checkLessThan4OptionsSelected(isChecked: checked.isChecked){
-                            
                             break
                         }
-                        
                     }
                     
                 }
@@ -99,9 +71,7 @@ struct selectionView_Previews: PreviewProvider {
         let noiseRepo = NoiseRepo()
         let selectedNoises = SelectedNoises()
         let checked = IsChecked()
-        
-//        let backgroundColor: [Color] = [Color.white, Color.white, Color.white, Color.white, Color.white]
-        
+
         selectionView()
             .environmentObject(noiseRepo)
             .environmentObject(selectedNoises)

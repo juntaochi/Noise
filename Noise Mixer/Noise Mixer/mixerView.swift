@@ -148,7 +148,7 @@ struct mixerView: View {
                     for noise in noiseRepo.noiseList{
                         var isSelected = false
                         for selectedNoise in selectedNoises.selectedNoiseList {
-                            if noise.soundEffectName == selectedNoise.soundEffectName{
+                            if noise.noiseName == selectedNoise.noiseName{
                                 isSelected = true
                             }
                         }

@@ -29,7 +29,7 @@ class AudioPlayerManager: NSObject {
         }
     }
     func playSound(with noise: Noise) {
-        if let existingPlayer = players.first(where: { $0.noise.soundEffectName == noise.soundEffectName }) {
+        if let existingPlayer = players.first(where: { $0.noise.noiseName == noise.noiseName }) {
             // If a player exists, play it
             existingPlayer.player.play()
             return
@@ -38,7 +38,7 @@ class AudioPlayerManager: NSObject {
             print("Sound file not found")
             return
         }
-        let fileURL = folderURL.appendingPathComponent(noise.soundEffectName).appendingPathExtension("mp3")
+        let fileURL = folderURL.appendingPathComponent(noise.noiseName).appendingPathExtension("mp3")
         
         guard FileManager.default.fileExists(atPath: fileURL.path) else {
             print("Sound file not found at :\(fileURL)")
@@ -60,12 +60,12 @@ class AudioPlayerManager: NSObject {
     func printAllPlayers() {
         for playerInfo in players {
             print("Player: \(playerInfo.player)")
-            print("Noise: \(playerInfo.noise.soundEffectName)")
+            print("Noise: \(playerInfo.noise.noiseName)")
         }
     }
 
     func adjustVolume(for noise: Noise, to volume: Float){
-        guard let playerInfo = players.first(where: {$0.noise.soundEffectName == noise.soundEffectName})
+        guard let playerInfo = players.first(where: {$0.noise.noiseName == noise.noiseName})
         else {
             print("No player found for noise: \(noise)")
             return
@@ -77,7 +77,7 @@ class AudioPlayerManager: NSObject {
 //        playerInfo.player.play()
     }
     func stopPlayer(for noise: Noise){
-        guard let playerInfo = players.first(where: {$0.noise.soundEffectName == noise.soundEffectName})
+        guard let playerInfo = players.first(where: {$0.noise.noiseName == noise.noiseName})
         else {
             print("No player found for noise: \(noise)")
             return

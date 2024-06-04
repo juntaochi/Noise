@@ -10,15 +10,11 @@ import Foundation
 import SwiftUI
 import SwiftData
 
-extension Color {
-    static let darkBlue = Color(red: 0.0, green: 0.0, blue: 0.5)
-}
-
-var rain = Noise(volume: 0.1,icon:Image(systemName: "cloud.drizzle"),color: .gray, soundEffectName: "rain")
-var fire = Noise(volume: 0.1,icon:Image(systemName: "flame"),color: .red, soundEffectName: "fire")
-var forest = Noise(volume: 0.3,icon:Image(systemName: "leaf"),color: .green, soundEffectName: "forest")
-var wave = Noise(volume: 0.3,icon:Image(systemName: "water.waves"),color: .blue, soundEffectName: "wave")
-var car = Noise(volume: 0.3, icon:Image(systemName: "car"), color: .black, soundEffectName: "car")
+var rain = Noise(volume: 1.0,icon:Image(systemName: "cloud.drizzle"),color: .gray, noiseName: "rain", noiseView: AnyView(RainView()))
+var fire = Noise(volume: 0.0,icon:Image(systemName: "flame"),color: .red, noiseName: "fire", noiseView: AnyView{FireView()})
+var forest = Noise(volume: 0.0,icon:Image(systemName: "leaf"),color: .green, noiseName: "forest")
+var wave = Noise(volume: 0.0,icon:Image(systemName: "water.waves"),color: .blue, noiseName: "wave")
+var car = Noise(volume: 0.0, icon:Image(systemName: "car"), color: .black, noiseName: "car")
 
 
 class NoiseRepo: ObservableObject{
@@ -49,7 +45,6 @@ class SelectedNoises: ObservableObject{
     init() {
         self.selectedNoiseList = [rain, fire, forest, wave]
     }
-
 
     func setSelectedNoiseList(_ newList: [Noise]) {
             selectedNoiseList = newList

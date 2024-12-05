@@ -3,7 +3,7 @@
 ## Overview  
 Noise is a personalized soundscape creator built using SwiftUI and other native iOS frameworks. This app allows users to relax, focus, or enhance their environment through a diverse library of natural sounds. Each sound can be customized with adjustable intensity, while dynamic abstract visuals complement the auditory experience, creating a harmonious blend of sound and art.
 
-![App Screenshot](./noise_screenshot.png)
+<img src="./noise_screenshot.png" alt="App Screenshot" width="250">
 
 ---
 
